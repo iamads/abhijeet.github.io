@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Faenvelope from 'react-icons/lib/fa/envelope-o';
+import Fagithub from 'react-icons/lib/fa/github';
+import Falinkedin from 'react-icons/lib/fa/linkedin-square';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <div className="contact">
+        <div>
+          <Faenvelope /> | me@abhijeet.de
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className="urls"> 
+          <span><a target="_blank" href="https://github.com/iamads"><Fagithub /></a></span>
+          <span><a target="_blank" href="https://www.linkedin.com/in/abhijeet-de"><Falinkedin /></a></span>
+        </div> 
       </div>
     );
   }
